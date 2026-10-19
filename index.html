@@ -465,7 +465,18 @@
       font: 700 18px var(--display);
       color: #05020a;
       box-shadow: 0 6px 18px rgba(176, 38, 255, .08);
-      flex-shrink: 0
+      flex-shrink: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+      transform: scale(1.22);
     }
 
     .member-name {
@@ -706,23 +717,23 @@
 
         <div class="team-grid" id="teamGrid">
           <div class="member-card" data-key="adi">
-            <div class="avatar av-grad-4">AC</div>
+            <div class="avatar av-grad-4"><img src="panca/img-yoga.jpg" alt="Adi Candra Prayoga" onerror="this.onerror=null;this.src='panca/adi.jpg';"></div>
             <div class="member-name">Adi Candra Prayoga</div>
           </div>
           <div class="member-card" data-key="anggun">
-            <div class="avatar av-grad-2">AD</div>
+            <div class="avatar av-grad-2"><img src="panca/img-anggun.jpg" alt="Anggun Deswita Maharani" onerror="this.onerror=null;this.src='panca/anggun.jpg';"></div>
             <div class="member-name">Anggun Deswita Maharani</div>
           </div>
           <div class="member-card" data-key="arka">
-            <div class="avatar av-grad-3">MA</div>
+            <div class="avatar av-grad-3"><img src="panca/img-arka.jpg" alt="Muhammad Arka Norafifi" onerror="this.onerror=null;this.src='panca/arka.jpg';"></div>
             <div class="member-name">Muhammad Arka Norafifi</div>
           </div>
           <div class="member-card" data-key="ilham">
-            <div class="avatar av-grad-1">MI</div>
+            <div class="avatar av-grad-1"><img src="panca/img-ilham.jpg" alt="Muhammad Ilham Hasan" onerror="this.onerror=null;this.src='panca/ilham.jpg';"></div>
             <div class="member-name">Muhammad Ilham Hasan</div>
           </div>
           <div class="member-card" data-key="rio">
-            <div class="avatar av-grad-5">RC</div>
+            <div class="avatar av-grad-5"><img src="panca/img-rio.jpg" alt="Rio Candra Kirana" onerror="this.onerror=null;this.src='panca/rio.jpg';"></div>
             <div class="member-name">Rio Candra Kirana</div>
           </div>
         </div>
